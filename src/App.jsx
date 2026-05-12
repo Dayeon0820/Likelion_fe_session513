@@ -7,10 +7,10 @@ import "./index.css";
  */
 
 // 스웨거에 명시된 서버 주소 (API가 실제 동작하는 본체입니다)
-const BASE_URL = "https://congachu.dev";
+const BASE_URL = "";
 
 // 본인의 학번! (나만의 데이터를 구분하기 위한 열쇠입니다)
-const STUDENT_CODE = "20220470";
+const STUDENT_CODE = "";
 
 const todoApi = {
   // 1. 할 일 조회 (GET /api/todos)
