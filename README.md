@@ -1,16 +1,51 @@
-# React + Vite
+# 🦁 멋쟁이사자처럼 프론트엔드 API 연동 실습 (5/13)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+본 저장소는 **React + Vite** 환경에서의 API 연동 실습을 위한 스켈레톤 코드입니다. 실습 세션의 원활한 진행을 위해, 시작 전 아래 가이드에 따라 개발 환경 세팅을 완료해 주세요!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 사전 준비 사항
+실습을 시작하기 전, 본인의 컴퓨터에 아래 도구가 설치되어 있어야 합니다.
+- **Node.js (LTS 버전 권장)**: [공식 홈페이지](https://nodejs.org/)에서 다운로드 가능
+- **Git**: 코드 클론을 위해 필요합니다.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 환경 세팅 가이드 (실습 전 필수!)
 
-## Expanding the ESLint configuration
+### 1. 프로젝트 클론 (Clone)
+터미널(Terminal) 또는 명령 프롬프트를 열고, 코드를 저장할 폴더로 이동한 뒤 아래 명령어를 입력하세요.
+```bash
+git clone https://github.com/Dayeon0820/Likelion_fe_session513.git
+cd Likelion_fe_session513
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. 의존성 패키지 설치 (Install)
+프로젝트 폴더 안에서 필요한 라이브러리들을 설치합니다.
+```bash
+npm install
+```
+
+### 3. 로컬 서버 실행 (Run)
+환경 세팅이 잘 되었는지 확인하기 위해 개발 서버를 실행해 봅니다.
+```bash
+npm run dev
+```
+- 터미널에 나타나는 주소(예: `http://localhost:5173/`)를 브라우저에서 열었을 때, **"Todo API Session"** 화면이 보이면 성공입니다!
+
+---
+
+## 📂 프로젝트 구조 안내
+실습은 주로 **`src/App.jsx`** 파일 하나에서 진행됩니다.
+- **`src/App.jsx`**: 전체 UI와 API 호출 로직이 모여있는 핵심 파일입니다.
+  - 상단 `todoApi` 객체 내부의 함수들을 채워넣는 것이 이번 실습의 목표입니다.
+  - 하단 `App` 컴포넌트에는 API 호출 결과에 따라 화면을 업데이트하는 로직이 주석과 함께 미리 작성되어 있습니다.
+- **`src/index.css`**: 서비스 디자인(CSS)이 정의되어 있습니다.
+
+---
+
+## 💡 실습 팁
+- 실습 중에는 브라우저의 **개발자 도구(F12) -> Console 탭**을 자주 확인하게 됩니다. 미리 익숙해져 오시면 좋습니다.
+- API 명세서(Swagger 등)를 미리 읽어보고, 어떤 데이터(필드명: `content` 등)가 오가는지 파악해 보세요.
+
+실습 시간에 만나요! 🦁🔥
